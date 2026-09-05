@@ -1,0 +1,34 @@
+# Laboratorio 6 - Análisis de Redes Sociales (YouTube)
+# Python 3.12
+
+# Manipulación de datos
+pandas>=2.2,<3
+numpy>=1.26,<2.3
+scipy>=1.13
+pyarrow>=16
+
+# Visualización
+matplotlib>=3.8
+seaborn>=0.13
+wordcloud>=1.9
+
+# Redes
+networkx>=3.3
+python-louvain>=0.16
+
+# Procesamiento de lenguaje natural (español)
+nltk>=3.9
+spacy>=3.8,<3.9
+emoji>=2.12
+es_core_news_sm @ https://github.com/explosion/spacy-models/releases/download/es_core_news_sm-3.8.0/es_core_news_sm-3.8.0-py3-none-any.whl
+
+# Entorno de notebooks
+ipykernel>=6.29
+jupyterlab>=4.2
+nbformat>=5.10
+
+# Análisis de sentimiento en español (Ejercicio 9)
+# torch debe instalarse desde el índice CPU; el wheel de PyPI incluye CUDA y pesa el doble:
+#   uv pip install torch --index-url https://download.pytorch.org/whl/cpu
+torch>=2.4,<3
+transformers>=4.40,<5
